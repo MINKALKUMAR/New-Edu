@@ -1,0 +1,15 @@
+@import "tailwindcss";
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Global reset to remove any corner spacing */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
