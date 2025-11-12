@@ -1031,17 +1031,22 @@ body {
 .venue-cta:active { transform: translateY(1px); }
 
 /* Industry Testimonials Section **********************************************/
+/* ==========================================================
+   Industry Testimonials (Light Theme)
+   ========================================================== */
 .industry-testimonials {
   background: linear-gradient(90deg, #f8fafc 0%, #e3e8ee 100%);
   padding: 60px 20px;
   text-align: center;
 }
+
 .testimonials-title {
   font-size: 2.2rem;
   font-weight: 700;
   color: #1a365d;
   margin-bottom: 32px;
 }
+
 .testimonials-content {
   display: flex;
   flex-wrap: wrap;
@@ -1051,12 +1056,14 @@ body {
   max-width: 1100px;
   margin: 0 auto;
 }
+
 .laptop-video {
   position: relative;
   min-width: 220px;
   min-height: 150px;
   margin-bottom: 24px;
 }
+
 .video-inside-laptop {
   position: absolute;
   top: 0;
@@ -1065,6 +1072,7 @@ body {
   height: 150px;
   pointer-events: none;
 }
+
 .testimonials-list {
   display: flex;
   flex-direction: column;
@@ -1072,6 +1080,7 @@ body {
   flex: 1;
   min-width: 260px;
 }
+
 .testimonial-card {
   background: #fff;
   border-radius: 12px;
@@ -1081,18 +1090,22 @@ body {
   max-width: 350px;
   margin: 0 auto;
 }
+
 .testimonial-text {
   font-size: 1.1rem;
   color: #334e68;
   margin-bottom: 12px;
 }
+
 .testimonial-author {
   font-size: 0.95rem;
   color: #486581;
 }
+
 .testimonial-author strong {
   color: #1a365d;
 }
+
 @media (max-width: 900px) {
   .testimonials-content {
     flex-direction: column;
@@ -1104,6 +1117,7 @@ body {
     width: 100%;
   }
 }
+
 @media (max-width: 600px) {
   .industry-testimonials {
     padding: 40px 8px;
@@ -1125,12 +1139,15 @@ body {
   }
 }
 
-/* Dark Theme for Industry Testimonials */
+/* ==========================================================
+   Industry Testimonials (Dark Theme)
+   ========================================================== */
 .industry-testimonials-dark {
   background: linear-gradient(135deg, #0e274d 0%, #0b1f3d 100%);
   padding: 80px 0;
   color: #f8fafc;
 }
+
 .testimonials-content-dark {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1140,46 +1157,60 @@ body {
   margin: 0 auto;
   padding: 0 20px;
 }
+
+/* Laptop Video Container */
 .laptop-video-dark {
   position: relative;
   width: 100%;
   max-width: 680px;
-  min-width: 320px;
   aspect-ratio: 400 / 260;
-  min-height: 200px;
+  margin: 0 auto;
+  z-index: 1;
 }
-.video-inside-laptop-dark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 400px;
-  height: 260px;
-  pointer-events: none;
-}
+
+/* SVG Laptop Frame */
 .laptop-svg {
   width: 100%;
   height: 100%;
   display: block;
-  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.9));
+  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.9));
+  position: relative;
+  z-index: 1;
 }
-.laptop-screen-video {
+
+.video-frame-wrapper {
   position: absolute;
   top: 15.38%;
-  left: 7.5%;
-  width: 85%;
+  left: 11.25%;
+  width: 78%;
   height: 65.38%;
-  border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 6px 24px rgba(0,7,14,0.44);
-  pointer-events: none;
-  opacity: 0.8;
+  border-radius: 30px;   /* <-- increase this to 50px if you want */
+  overflow: hidden;
   z-index: 2;
+  box-shadow: 0 6px 24px rgba(36, 38, 40, 0.44);
 }
+
+.video-frame-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+  border-radius: inherit; /* <-- this makes radius apply properly */
+  clip-path: inset(0 round inherit); /* <-- ensures corners are truly clipped */
+}
+
+/* Testimonial Card (Dark) */
 .testimonial-card-dark {
-  background: linear-gradient(135deg, rgba(164,212,252,0.10), rgba(255,255,255,0.05));
-  border: 1px solid rgba(255,255,255,0.12);
+  background: linear-gradient(
+    135deg,
+    rgba(164, 212, 252, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 18px;
-  box-shadow: 0 10px 28px rgba(0,0,0,0.28);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
   padding: 40px 36px;
   max-width: 520px;
   min-width: 320px;
@@ -1188,6 +1219,8 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+
+/* Title & Text */
 .testimonials-title-dark {
   font-size: 2.3rem;
   font-weight: 800;
@@ -1197,65 +1230,63 @@ body {
   background-clip: text;
   color: transparent;
 }
+
 .testimonial-text-dark {
   font-size: 1.25rem;
   color: #c7d9ff;
   margin-bottom: 24px;
   line-height: 1.7;
 }
+
 .testimonial-author-dark {
   font-size: 1.05rem;
   color: #9fb3c8;
   margin-top: 10px;
 }
+
 .testimonial-author-dark strong {
   color: #eaf5ff;
   font-weight: 700;
   margin-right: 8px;
 }
+
+/* Responsive Dark Section */
 @media (max-width: 700px) {
   .testimonials-content-dark {
     grid-template-columns: 1fr;
     gap: 24px;
   }
+
   .laptop-video-dark {
     max-width: 720px;
     width: 92vw;
   }
+
   .testimonial-card-dark {
     max-width: 100%;
     min-width: 0;
     padding: 32px 16px;
   }
 }
+
 @media (max-width: 600px) {
   .industry-testimonials-dark {
     padding: 40px 0;
   }
+
   .testimonials-title-dark {
     font-size: 1.5rem;
   }
+
   .testimonial-card-dark {
     padding: 18px 6px;
   }
+
   .laptop-video-dark {
     width: 92vw;
   }
 }
-@media (max-width: 600px) {
-  .industry-testimonials-dark {
-    padding: 40px 0;
-  }
-  .testimonials-title-dark {
-    font-size: 1.5rem;
-  }
-  .testimonial-card-dark {
-    padding: 18px 6px;
-  }
-  .laptop-video-dark {
-    width: 92vw;
-  }
-}
+
 
 /* Connect With Us ******************************************************/
 .connect-section{

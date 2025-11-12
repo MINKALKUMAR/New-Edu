@@ -16,6 +16,7 @@ import ParmaNand from '../assets/SpeakersSection/Parma Nand.png';
 import Jaskiran from '../assets/SpeakersSection/Jaskiran kaur.png';
 import Anu from '../assets/SpeakersSection/Anu Kaushal.png';
 import Akansha from '../assets/SpeakersSection/Akansha.png';
+import Tijay from '../assets/SpeakersSection/Tijay Gupta.png';
 
 const SpeakersSection = () => {
   const speakers = [
@@ -99,6 +100,13 @@ const SpeakersSection = () => {
       designation: "Co- Founder",
       company: "EFOS.in",
       image: Akansha,
+    },
+    {
+      id: 17,
+      name: "Tijay Gupta",
+      designation: "Co-Founder & COO",
+      company: "Bachpan & AHPS Group of Schools",
+      image: Tijay,
     },
       {
       id: 7,
