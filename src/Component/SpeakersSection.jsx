@@ -17,6 +17,8 @@ import Jaskiran from '../assets/SpeakersSection/Jaskiran kaur.png';
 import Anu from '../assets/SpeakersSection/Anu Kaushal.png';
 import Akansha from '../assets/SpeakersSection/Akansha.png';
 import Tijay from '../assets/SpeakersSection/Tijay Gupta.png';
+import ManojSingh from '../assets/SpeakersSection/Dr Manoj Singh.png';
+import Sneha from '../assets/SpeakersSection/Dr. Sneha Nalla.png';
 
 const SpeakersSection = () => {
   const speakers = [
@@ -56,6 +58,13 @@ const SpeakersSection = () => {
       designation: "Pro Vice-Chancellor",
       company: "Sharda University",
       image: ParmaNand,
+    },
+    {
+      id: 18,
+      name: "Dr.Manoj Singh",
+      designation: "Group Director",
+      company: "ATMS Group of Institutions",
+      image: ManojSingh,
     },
     {
       id: 1,
@@ -108,6 +117,13 @@ const SpeakersSection = () => {
       company: "Bachpan & AHPS Group of Schools",
       image: Tijay,
     },
+    {
+      id: 19,
+      name: "Dr. Sneha Nalla",
+      designation: "Director",
+      company: "Nalla Malla Reddy Foundation School",
+      image: Sneha,
+    },
       {
       id: 7,
       name: "Dr Nancy Juneja",
@@ -124,7 +140,7 @@ const SpeakersSection = () => {
     },
     {
       id: 12,
-      name: "Ms. Neha Singh",
+      name: "Neha Singh",
       designation: "Director-Advisor",
       company: "St Kabir's School and Siddharth International School",
       image: Neha,
