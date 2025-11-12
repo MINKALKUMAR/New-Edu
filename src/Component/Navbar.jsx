@@ -20,12 +20,10 @@ export default function Navbar() {
 
   const handleNavClick = (href) => {
     setOpen(false);
-
-    // ✅ Check if the link is external
  if (href.startsWith("http")) {
-  window.location.href = href; // Opens in same tab
-  return;
-}
+    window.open(href, "_blank"); // ✅ Opens in a new tab
+    return;
+  }
 
     // ✅ Internal navigation
     if (location.pathname === "/awards" || location.pathname==="/registration" || location.pathname==="/SponsorshipQuery" || location.pathname==="/Nominate") {
