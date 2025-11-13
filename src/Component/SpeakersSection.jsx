@@ -69,7 +69,7 @@ const SpeakersSection = () => {
     {
       id: 1,
       name: "Dr. Amit Jain",
-      designation: "Director",
+      designation: "Deen",
       company: "Inderprastha  Engineering  College  (IPEC)",
       image: Amit,
     },
