@@ -19,6 +19,9 @@ import Akansha from '../assets/SpeakersSection/Akansha.png';
 import Tijay from '../assets/SpeakersSection/Tijay Gupta.png';
 import ManojSingh from '../assets/SpeakersSection/Dr Manoj Singh.png';
 import Sneha from '../assets/SpeakersSection/Dr. Sneha Nalla.png';
+import TRPandey from '../assets/SpeakersSection/Dr TR Pandey.png';
+import Murari from '../assets/SpeakersSection/Murari.png';
+import Arti from '../assets/SpeakersSection/Prof.(Dr.) Arti Bansal.png';
 
 const SpeakersSection = () => {
   const speakers = [
@@ -67,11 +70,26 @@ const SpeakersSection = () => {
       image: ManojSingh,
     },
     {
+      id: 23,
+      name: "Prof. (Dr.) Murari Lal Gaur",
+      designation: "Chief advisor",
+      company: "Rawatpura sarkar group of institutions MP Academic Board Member Banaras Hindu University",
+      image: Murari,
+    },
+    {
       id: 1,
       name: "Dr. Amit Jain",
       designation: "Deen",
       company: "Inderprastha  Engineering  College  (IPEC)",
       image: Amit,
+    },
+  
+    {
+      id: 22,
+      name: "Dr TR Pandey",
+      designation: "Director",
+      company: "Ajay Kumar Garg Institute of Management, Ghaziabad",
+      image: TRPandey,
     },
   
     {
@@ -82,6 +100,13 @@ const SpeakersSection = () => {
       image:Pranav,
     },
     {
+      id: 3,
+      name: "Subarno Bhattacharyya",
+      designation: "Assistant Director",
+      company: "O.P. Jindal Global (Institution of Eminence) Deemed-to-be-University",
+      image: SubarnoBhattacharyya
+    },
+    {
       id: 14,
       name: "Dr. Jaskiran Kaur",
       designation: "Director",
@@ -89,12 +114,13 @@ const SpeakersSection = () => {
       image:Jaskiran,
     },
     {
-      id: 3,
-      name: "Subarno Bhattacharyya",
-      designation: "Assistant Director",
-      company: "O.P. Jindal Global (Institution of Eminence) Deemed-to-be-University",
-      image: SubarnoBhattacharyya
+      id: 24,
+      name: "Prof.(Dr.) Arti Bansal",
+      designation: "Additional Director",
+      company: "Chandigarh University Online",
+      image:Arti,
     },
+    
      {
       id: 15,
       name: "Anu Kaushal",
