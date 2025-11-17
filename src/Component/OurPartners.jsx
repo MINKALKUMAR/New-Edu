@@ -46,7 +46,7 @@ const OurPartners = () => {
     .partner-categories {
       display: flex;
       flex-direction: column;
-      gap: 26px;
+      gap: 76px;
       padding: 0px 6vw;
     }
 
@@ -88,10 +88,11 @@ const OurPartners = () => {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 20px;
+      padding: 20px 15px;
       transition: all 0.3s ease;
       cursor: pointer;
-      min-height: 167px;
+      min-height: 180px;
+      position: relative;
     }
 
     .partner-card:hover {
@@ -101,29 +102,41 @@ const OurPartners = () => {
     }
 
     .partner-name {
-      font-size: 14px;
-      font-weight: 600;
-      color: #00bfff;
-      margin: 0;
-      text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 900;
+    color: #ffffffff;
+    margin: 0 0 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: absolute;
+    top: -47px;
+    left: 0;
+    right: 0;
+    /* background: linear-gradient(90deg, #4fc6ff, #2d58d8); */
+    padding: 5px 10px;
+    border-radius: 6px;
+    width: max-content;
+    max-width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
 
     .partner-logo {
-      max-width: 120px;
-      max-height: 80px;
+      max-width: 265px;
+      max-height: 135px;
       width: auto;
       height: auto;
       object-fit: contain;
       filter: brightness(0.9) contrast(1.1);
-      transition: filter 0.3s ease;
+      transition: all 0.3s ease;
+      padding: 10px;
     }
 
     /* ✅ Make Lamrin logo slightly larger */
     .partner-logo.special-logo {
-      max-width: 180px;
-      max-height: 100px;
+      max-width: 200px;
+      max-height: 120px;
     }
 
     // .partner-card:hover .partner-logo {
@@ -142,7 +155,8 @@ const OurPartners = () => {
 
       .partner-card {
         padding: 20px 15px;
-        min-height: 160px;
+        min-height: 180px;
+        margin-top: 25px;
       }
 
       .partner-section {

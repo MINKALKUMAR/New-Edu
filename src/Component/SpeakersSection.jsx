@@ -22,6 +22,9 @@ import Sneha from '../assets/SpeakersSection/Dr. Sneha Nalla.png';
 import TRPandey from '../assets/SpeakersSection/Dr TR Pandey.png';
 import Murari from '../assets/SpeakersSection/Murari.png';
 import Arti from '../assets/SpeakersSection/Prof.(Dr.) Arti Bansal.png';
+import priya from '../assets/SpeakersSection/Priya Gambhir.png';
+import Ritu from '../assets/SpeakersSection/Ritu Srivastava.png';
+import Sunita from '../assets/SpeakersSection/Sunita Madaan.png';
 
 const SpeakersSection = () => {
   const speakers = [
@@ -200,11 +203,32 @@ const SpeakersSection = () => {
       company: "Scottish High International School",
       image: Isha,
     },
+    {
+      id: 25,
+      name: "Priya Gambhir",
+      designation: "Principal",
+      company: "St. Andrews World School",
+      image:priya,
+    },
+    {
+      id: 26,
+      name: "Ritu Srivastava",
+      designation: "Principal",
+      company: "Sri Chaitanya Techno School",
+      image:Ritu,
+    },
+    {
+      id: 27,
+      name: "Sunita Madaan ",
+      designation: "Principal",
+      company: "Salwan Public School",
+      image:Sunita,
+    },
   ];
 
   return (
     <section className="speakers-section" id="speakers">
-      <div className="container">
+      <div className="containerr">
         <div className="section-header">
           <h2 className="section-title">Our Speakers</h2>
           <div className="section-divider"></div>
