@@ -1680,9 +1680,9 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.speaker-card:hover .image-overlay {
+/* .speaker-card:hover .image-overlay {
   opacity: 1;
-}
+} */
 
 .social-links {
   position: absolute;
