@@ -25,6 +25,7 @@ import Arti from '../assets/SpeakersSection/Prof.(Dr.) Arti Bansal.png';
 import priya from '../assets/SpeakersSection/Priya Gambhir.png';
 import Ritu from '../assets/SpeakersSection/Ritu Srivastava.png';
 import Sunita from '../assets/SpeakersSection/Sunita Madaan.png';
+import ManojManuja from '../assets/SpeakersSection/Dr. Manoj Manuja.png';
 
 const SpeakersSection = () => {
   const speakers = [
@@ -49,6 +50,13 @@ const SpeakersSection = () => {
       designation: "Vice-Chancellor",
       company: "Swami Vivekanand Subharti University",
       image: pramod,
+    },
+    {
+      id: 28,
+      name: "Dr. Manoj Manuja",
+      designation: "Vice-Chancellor",
+      company: "Geeta University",
+      image: ManojManuja,
     },
   
     {
