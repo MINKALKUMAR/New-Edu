@@ -35,17 +35,16 @@ export default function PDFBookViewer() {
 
   return (
     <div style={containerStyle}>
-      {/* Home Button */}
       <button style={homeButtonStyle} onClick={() => navigate("/")}>
         ⬅ Back to Home
       </button>
 
       <iframe
-        allowFullScreen
+        allowFullScreen="allowfullscreen"
         allow="clipboard-write"
         scrolling="no"
         className="fp-iframe"
-        src="https://heyzine.com/flip-book/6fe07f531b.html"
+        src="https://heyzine.com/flip-book/47af540dd3.html"
         style={iframeStyle}
         title="PDF Flipbook"
       />
