@@ -26,6 +26,8 @@ import priya from '../assets/SpeakersSection/Priya Gambhir.png';
 import Ritu from '../assets/SpeakersSection/Ritu Srivastava.png';
 import Sunita from '../assets/SpeakersSection/Sunita Madaan.png';
 import ManojManuja from '../assets/SpeakersSection/Dr. Manoj Manuja.png';
+import Monieka from '../assets/SpeakersSection/Monieka Khanna.png';
+
 
 const SpeakersSection = () => {
   const speakers = [
@@ -147,7 +149,15 @@ const SpeakersSection = () => {
       company: "EFOS.in",
       image: Akansha,
     },
+  
     {
+      id: 29,
+      name: "Monieka Khanna",
+      designation: "CEO",
+      company: "Mount Olympus Group of Schools",
+      image: Monieka,
+    },
+      {
       id: 17,
       name: "Tijay Gupta",
       designation: "Co-Founder & COO",

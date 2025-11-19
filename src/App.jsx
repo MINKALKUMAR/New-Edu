@@ -24,45 +24,48 @@ import SponsorshipQuery from "./Component/SponsorshipQuery";
 import NominateNow from "./Component/NominateNow";
 import SpeakersSection from "./Component/SpeakersSection";
 import EmailCopyBanner from "./Component/EmailCopyBanner";
+import PDFBookViewer from "./Component/PDFBookViewer";
 export default function App() {
   return (
     <Router>
-      <Navbar />
-
       <Routes>
-        {/* Main homepage route */}
-        <Route
-          path="/"
-          element={
-            <>
-              <Hero />
-              <WelcomeSection />
-              <ScrollingStrips />
-              <OurPartners/>
-              <SpeakersSection/>
-              <DiscussionPoints />
-              <WhyAttend />
-              <WhoShouldAttend />
-              <Speakers />
-              <FocusSectors />
-              <PastGlimpses />
-              <Partners />
-              <Venue />
-              <IndustryTestimonials />
-              <ConnectWithUs />
-              <FixedButton />
-            
-            </>
-          }
-        />
-
-        {/* Awards page route */}
-        <Route path="/awards" element={<Awards />} />
-            {/* Registration page route */}
-        <Route path="/registration" element={<RegistrationPage/>} />
-        <Route path="/SponsorshipQuery" element={<SponsorshipQuery/>} />
-        <Route path="/Nominate" element={<NominateNow/>}/>
-         <Route path="/mailer" element={<EmailCopyBanner/>}/>
+        <Route path="/magazine" element={<PDFBookViewer/>}/>
+        <Route path="*" element={
+          <>
+            <Navbar />
+            <Routes>
+              {/* Main homepage route */}
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Hero />
+                    <WelcomeSection />
+                    <ScrollingStrips />
+                    <OurPartners/>
+                    <SpeakersSection/>
+                    <DiscussionPoints />
+                    <WhyAttend />
+                    <WhoShouldAttend />
+                    <Speakers />
+                    <FocusSectors />
+                    <PastGlimpses />
+                    <Partners />
+                    <Venue />
+                    <IndustryTestimonials />
+                    <ConnectWithUs />
+                    <FixedButton />
+                  </>
+                }
+              />
+              <Route path="/awards" element={<Awards />} />
+              <Route path="/registration" element={<RegistrationPage/>} />
+              <Route path="/SponsorshipQuery" element={<SponsorshipQuery/>} />
+              <Route path="/Nominate" element={<NominateNow/>}/>
+              <Route path="/mailer" element={<EmailCopyBanner/>}/>
+            </Routes>
+          </>
+        } />
       </Routes>
     </Router>
   );
