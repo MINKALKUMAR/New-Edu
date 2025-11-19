@@ -27,6 +27,8 @@ import Ritu from '../assets/SpeakersSection/Ritu Srivastava.png';
 import Sunita from '../assets/SpeakersSection/Sunita Madaan.png';
 import ManojManuja from '../assets/SpeakersSection/Dr. Manoj Manuja.png';
 import Monieka from '../assets/SpeakersSection/Monieka Khanna.png';
+import Ripudaman from '../assets/SpeakersSection/Dr. Ripudaman Gaur.png';
+import Anil from '../assets/SpeakersSection/Prof Anil Ahlawat.png';
 
 
 const SpeakersSection = () => {
@@ -89,14 +91,7 @@ const SpeakersSection = () => {
       company: "Rawatpura sarkar group of institutions MP Academic Board Member Banaras Hindu University",
       image: Murari,
     },
-    {
-      id: 1,
-      name: "Dr. Amit Jain",
-      designation: "Deen",
-      company: "Inderprastha  Engineering  College  (IPEC)",
-      image: Amit,
-    },
-  
+   
     {
       id: 22,
       name: "Dr TR Pandey",
@@ -111,6 +106,13 @@ const SpeakersSection = () => {
       designation: "Director",
       company: "Lingaya’s Lalita Devi Institute of Management & Sciences",
       image:Pranav,
+    },
+    {
+      id: 30,
+      name: "Prof Anil Ahlawat",
+      designation: "Director Academics",
+      company: "NIET, Greater Noida",
+      image:Anil,
     },
     {
       id: 3,
@@ -140,6 +142,21 @@ const SpeakersSection = () => {
       designation: "Director Training & Communication",
       company: "Lamrin Tech Skills University Punjab",
       image: Anu,
+    },
+     {
+      id: 1,
+      name: "Dr. Amit Jain",
+      designation: "Dean",
+      company: "Inderprastha  Engineering  College  (IPEC)",
+      image: Amit,
+    },
+  
+     {
+      id: 29,
+      name: "Dr. Ripudaman Gaur",
+      designation: "Dean",
+      company: "Lloyd Business School",
+      image: Ripudaman,
     },
    
     {

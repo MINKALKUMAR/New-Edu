@@ -24,12 +24,11 @@ import SponsorshipQuery from "./Component/SponsorshipQuery";
 import NominateNow from "./Component/NominateNow";
 import SpeakersSection from "./Component/SpeakersSection";
 import EmailCopyBanner from "./Component/EmailCopyBanner";
-import PDFBookViewer from "./Component/PDFBookViewer";
+
 export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/magazine" element={<PDFBookViewer/>}/>
         <Route path="*" element={
           <>
             <Navbar />
