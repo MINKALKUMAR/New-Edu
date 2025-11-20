@@ -1,232 +1,149 @@
-import FintrexLogo from "../assets/partners/Fintrex.png"
-import EducoreLogo from "../assets/partners/Educore.png"
-import WULogoWhite from "../assets/partners/WULogoWhite.png"
-import LINGAYA from "../assets/partners/LINGAYA.png"
-import KHASRAPAT from "../assets/partners/KHASRAPAT.png"
-import ICTAcademy from "../assets/partners/ICTAcademy.png"
-import Education_Future_One from "../assets/partners/Education_Future_One.png"
-import lamrin from "../assets/partners/Lamrin.png"
+import FintrexLogo from "../assets/partners/Fintrex.png";
+import EducoreLogo from "../assets/partners/Educore.png";
+import WULogoWhite from "../assets/partners/WULogoWhite.png";
+import LINGAYA from "../assets/partners/LINGAYA.png";
+import KHASRAPAT from "../assets/partners/KHASRAPAT.png";
+import ICTAcademy from "../assets/partners/ICTAcademy.png";
+import Education_Future_One from "../assets/partners/Education_Future_One.png";
+import lamrin from "../assets/partners/Lamrin.png";
 
 const OurPartners = () => {
   const styles = `
     .partner-section {
       background: linear-gradient(135deg, #152a49 0%, #0f1f35 100%);
-      padding: 60px 20px;
+      padding: 60px 40px;
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
+
     .partner-container {
-      max-width: 1200px;
-      width: 100%;
+      max-width: 1400px;
       margin: 0 auto;
+      width: 100%;
     }
+
     .partner-header {
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 50px;
     }
 
     .partner-title {
       font-size: 48px;
-      font-weight: 700;
-      color: #ffffff;
-      margin: 0 0 20px 0;
-      letter-spacing: -0.5px;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 10px;
     }
 
     .partner-divider {
-      width: 80px;
+      width: 100px;
       height: 4px;
-      background: linear-gradient(90deg, #00bfff 0%, #0099cc 100%);
+      background: #00bfff;
       margin: 0 auto;
-      border-radius: 2px;
     }
 
-    .partner-categories {
-      display: flex;
-      flex-direction: column;
-      gap: 76px;
-      padding: 0px 6vw;
-    }
-
-    .partner-category {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .partner-category-title {
-      font-size: 24px;
-      font-weight: 600;
-      color: #00bfff;
-      margin: 0;
-      text-align: center;
-    }
-
-    .partner-grid {
+    /* FIRST ROW (3 CARDS) */
+    .partner-grid.first-row {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      width: 100%;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px;
+      margin-bottom: 60px;
     }
 
-    .partner-card-wrapper {
-      display: flex;
-      justify-content: center;
-    }
+    /* SECOND ROW (4 CARDS) */
+    .partner-grid.second-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px;
+  justify-items: center;
+  justify-content: center;
+}
 
-    .partner-link {
-      text-decoration: none;
-      width: 100%;
-      max-width: 280px;
-    }
 
     .partner-card {
-      background: #fff;
-      border: 1px solid rgba(0, 191, 255, 0.2);
-      border-radius: 12px;
+      background: #ffffff;
+      border-radius: 0px;     /* RECTANGLE LIKE WEBSITE */
+      padding: 20px;
+      height: 160px;          /* SHORTER */
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
-      padding: 20px 15px;
-      transition: all 0.3s ease;
-      cursor: pointer;
-      min-height: 180px;
+      align-items: center;
       position: relative;
+      border-bottom: 6px solid  #cae3ffff;
+      transition: border-color 0.3s ease;
     }
 
     .partner-card:hover {
-      border-color: rgba(0, 191, 255, 0.5);
-      transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(0, 191, 255, 0.15);
+      border-bottom: 6px solid  #0077ffff;;
     }
 
     .partner-name {
-    font-size: 17px;
-    font-weight: 900;
-    color: #ffffffff;
-    margin: 0 0 15px 0;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: absolute;
-    top: -47px;
-    left: 0;
-    right: 0;
-    /* background: linear-gradient(90deg, #4fc6ff, #2d58d8); */
-    padding: 5px 10px;
-    border-radius: 6px;
-    width: max-content;
-    max-width: 90%;
-    margin: 0 auto;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      position: absolute;
+      top: -35px;
+      width: 100%;
+      text-align: center;
+      color: #ffffffff;
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
     }
 
-    .partner-logo {
-      max-width: 265px;
-      max-height: 135px;
-      width: auto;
-      height: auto;
-      object-fit: contain;
-      filter: brightness(0.9) contrast(1.1);
-      transition: all 0.3s ease;
-      padding: 10px;
+.partner-logo {
+    width: 274px;
+    height: 141px;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+    /* FIRST ROW — BIGGER LOGOS */
+  .first-row .partner-logo {
+    width: 211px;
+    height: 138px;
+}
+
+    .partner-card:hover .partner-logo {
+      transform: scale(1.12);
     }
 
-    /* ✅ Make Lamrin logo slightly larger */
-    .partner-logo.special-logo {
-      max-width: 200px;
-      max-height: 120px;
-    }
-
-    // .partner-card:hover .partner-logo {
-    //   filter: brightness(1.2) contrast(1.2);
-    // }
-
-    @media (max-width: 768px) {
-      .partner-title {
-        font-size: 36px;
-      }
-
-      .partner-grid {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        gap: 20px;
-      }
-
-      .partner-card {
-        padding: 20px 15px;
-        min-height: 180px;
-        margin-top: 25px;
-      }
-
-      .partner-section {
-        padding: 40px 15px;
+    /* Responsive */
+    @media (max-width: 900px) {
+      .partner-grid.first-row,
+      .partner-grid.second-row {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
-    @media (max-width: 480px) {
-      .partner-title {
-        font-size: 28px;
-      }
-
-      .partner-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .partner-card {
-        padding: 20px;
+    @media (max-width: 600px) {
+      .partner-grid.first-row,
+      .partner-grid.second-row {
+        grid-template-columns: repeat(1, 1fr);
       }
     }
-  `
+  `;
 
   const partnerCategories = [
     {
-      title: "",
+      className: "first-row",
       partners: [
-        {
-          name: "Organiser",
-          logo: FintrexLogo,
-          link: "https://fintrexmedia.com/",
-        },
-        {
-          name: "Knowledge Partner",
-          logo: EducoreLogo,
-          link: "#",
-        },
-        {
-          name: "Presenting Partner",
-          logo: WULogoWhite,
-          link: "#",
-        },
+        { name: "Organiser", logo: FintrexLogo, link: "https://fintrexmedia.com/" },
+        { name: "Knowledge Partner", logo: EducoreLogo, link: "#" },
+        { name: "Presenting Partner", logo: WULogoWhite, link: "#" },
       ],
     },
     {
-      title: "",
+      className: "second-row",
       partners: [
-      
-        {
-          name: "Networking Partner",
-          logo: Education_Future_One,
-          link: "#",
-        },
-          {
-          name: "University Partner",
-          logo: LINGAYA,
-          link: "#",
-        },
-        {
-          name: "University Partner",
-          logo: lamrin,
-          link: "#",
-          className: "special-logo", // ✅ added class for last logo
-        },
+        { name: "Networking Partner", logo: Education_Future_One, link: "#" },
+        { name: "University Partner", logo: LINGAYA, link: "#" },
+        { name: "University Partner", logo: lamrin, link: "#" },
+        { name: "Skill Partner", logo: KHASRAPAT, link: "#" },
       ],
     },
-  ]
+  ];
 
   return (
     <>
       <style>{styles}</style>
+
       <section className="partner-section">
         <div className="partner-container">
           <div className="partner-header">
@@ -234,39 +151,32 @@ const OurPartners = () => {
             <div className="partner-divider"></div>
           </div>
 
-          <div className="partner-categories">
-            {partnerCategories.map((category, categoryIndex) => (
-              <div key={categoryIndex} className="partner-category">
-                <h3 className="partner-category-title">{category.title}</h3>
-
-                <div className="partner-grid">
-                  {category.partners.map((partner, partnerIndex) => (
-                    <div key={partnerIndex} className="partner-card-wrapper">
-                      <a
-                        href={partner.link}
-                        className="partner-link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <div className="partner-card">
-                          <p className="partner-name">{partner.name}</p>
-                          <img
-                            src={partner.logo || "/placeholder.svg"}
-                            alt={partner.name}
-                            className={`partner-logo ${partner.className || ""}`}
-                          />
-                        </div>
-                      </a>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+          {partnerCategories.map((row, rowIndex) => (
+            <div key={rowIndex} className={`partner-grid ${row.className}`}>
+              {row.partners.map((partner, index) => (
+                <a
+                  key={index}
+                  href={partner.link}
+                  className="partner-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="partner-card">
+                    <p className="partner-name">{partner.name}</p>
+                    <img
+                      src={partner.logo}
+                      alt={partner.name}
+                      className="partner-logo"
+                    />
+                  </div>
+                </a>
+              ))}
+            </div>
+          ))}
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default OurPartners
+export default OurPartners;
