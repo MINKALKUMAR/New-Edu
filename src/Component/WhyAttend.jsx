@@ -99,7 +99,16 @@ export default function WhyAttend() {
         <div className="wa-grid">
           {items.map((it, idx) => (
             <article key={idx} className="wa-card reveal" style={{ transitionDelay: `${idx * 70}ms` }}>
-              <img className="wa-card-bg" src={it.img} alt={it.title} loading="lazy" />
+              <img
+                className="wa-card-bg"
+                src={it.img.replace("w=1600", "w=600")}
+                alt={it.title}
+                loading="lazy"
+                decoding="async"
+                width="400"
+                height="250"
+              />
+
               <div className="wa-card-gradient" />
               <div className="wa-card-overlay">
                 <h3 className="wa-card-title">{it.title}</h3>

@@ -29,10 +29,18 @@ import ManojManuja from '../assets/SpeakersSection/Dr. Manoj Manuja.png';
 import Monieka from '../assets/SpeakersSection/Monieka Khanna.png';
 import Ripudaman from '../assets/SpeakersSection/Dr. Ripudaman Gaur.png';
 import Anil from '../assets/SpeakersSection/Prof Anil Ahlawat.png';
+import Bikash from '../assets/SpeakersSection/Dr. Bikash Sharma.png';
 
 
 const SpeakersSection = () => {
   const speakers = [
+      {
+      id: 32,
+      name: "Dr. Bikash Sharma",
+      designation: "President",
+      company: "IAMA International Open University",
+      image: Bikash,
+    },
       {
       id: 2,
       name: "Dr. Picheswar Gadde",
@@ -287,13 +295,20 @@ const SpeakerCard = ({ speaker }) => {
     <div className="speaker-card">
       <div className="speaker-image-wrapper">
         <div className="speaker-image-container">
-          <img 
-            src={speaker.image} 
+          
+          <img
+            src={speaker.image}
             alt={speaker.name}
             className="speaker-image"
+            loading="lazy"
+            decoding="async"
+            width="300"
+            height="300"
           />
+
           <div className="image-overlay"></div>
         </div>
+
         <div className="social-links">
           <a href="#" className="social-link">
             <i className="fab fa-linkedin-in"></i>
@@ -306,7 +321,7 @@ const SpeakerCard = ({ speaker }) => {
           </a>
         </div>
       </div>
-      
+
       <div className="speaker-info">
         <h3 className="speaker-name">{speaker.name}</h3>
         <p className="speaker-designation">{speaker.designation}</p>

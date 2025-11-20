@@ -36,196 +36,196 @@ const speakerImages = {
 // - Cleaner logic: duplicates are created at render-time for seamless looping
 export default function Speakers() {
   const [failedImages, setFailedImages] = useState({});
-const visionaries = [
-  {
-    id: 1,
-    name: "Dr. Anshu Kataria",
-    title: "Chairman",
-    imagePath: speakerImages.Anshu,
-    designation: "Aryan Group of Colleges",
-  },
-  {
-    id: 2,
-    name: "Prof.(Dr.) Parvinder Singh",
-    title: "Chairman & Director",
-    imagePath: speakerImages.Parvinder,
-    designation:
-      "Confederation of Indian Private Universities & International Academic Affairs-Chandigarh",
-  },
-  {
-    id: 3,
-    name: "Dr. Picheswar Gadde",
-    title: "Chancellor",
-    imagePath: speakerImages.Picheswar,
-    designation: "Lingaya’s Vidyapeeth, Lingaya's Group, Haryana",
-  },
-  {
-    id: 4,
-    name: "Dr. Manoj Manuja",
-    title: "Vice Chancellor",
-    imagePath: speakerImages.Manoj,
-    designation: "Geeta University",
-  },
-  {
-    id: 5,
-    name: "Prof (Dr.) Manpreet Singh Manna",
-    title: "Vice Chancellor",
-    imagePath: speakerImages.Manpreet,
-    designation: "Chandigarh University",
-  },
-  {
-    id: 6,
-    name: "Dr. Sanjay Bahl",
-    title: "Vice Chancellor",
-    imagePath: speakerImages.Sanjay,
-    designation: "Indus International University",
-  },
-  {
-    id: 7,
-    name: "Prof. (Dr.) Murari Lal Gaur",
-    title: "Chief Advisor",
-    imagePath: speakerImages.Murari,
-    designation:
-      "Rawatpura Sarkar Group of Institutions, MP | Academic Board Member, Banaras Hindu University",
-  },
-  {
-    id: 8,
-    name: "Prof (Dr.) Devendra Sharma",
-    title: "Vice Chancellor",
-    imagePath: speakerImages.Devendra,
-    designation: "HRIT University",
-  },
-  {
-    id: 9,
-    name: "Dr. Akansha Jain",
-    title: "Co-Founder",
-    imagePath: speakerImages.Akansha,
-    designation: "EFOS.in",
-  },
-  {
-    id: 10,
-    name: "Suresh Babu Lakshmanan",
-    title: "Associate Vice President",
-    imagePath: speakerImages.Suresh,
-    designation: "ICT Academy",
-  },
-  {
-    id: 11,
-    name: "Prof. Jayanand",
-    title: "Pro Vice Chancellor",
-    imagePath: speakerImages.Jayanand,
-    designation: "Shobhit Deemed University",
-  },
-  {
-    id: 12,
-    name: "Prof. (Dr.) Pankaj Kumar Mishra",
-    title: "Pro Vice Chancellor",
-    imagePath: speakerImages.PankajKumar,
-    designation: "Future University",
-  },
-  {
-    id: 13,
-    name: "Dr. Jagtar Singh Dhiman",
-    title: "Pro Vice Chancellor",
-    imagePath: speakerImages.Jagtar,
-    designation: "Guru Kashi University, Punjab",
-  },
-  {
-    id: 14,
-    name: "Dr. Raghuveer VR",
-    title: "Pro Vice Chancellor – Academic Affairs",
-    imagePath: speakerImages.Raghuveer,
-    designation: "Chandigarh University",
-  },
-  {
-    id: 15,
-    name: "Prof.(Dr.) Gurpreet Singh",
-    title: "Founder Director",
-    imagePath: speakerImages.Gurpreet,
-    designation: "Chandigarh University Online",
-  },
-  {
-    id: 16,
-    name: "Ankur Gill",
-    title: "Director of Operations",
-    imagePath: speakerImages.Ankur,
-    designation: "Swami Vivekanand Group of Institutes (SVGOI)",
-  },
-  {
-    id: 17,
-    name: "Prof.(Dr.) Pankaj Gupta",
-    title: "Executive Director (CESM)",
-    imagePath: speakerImages.Pankaj,
-    designation: "O. P. Jindal Global University",
-  },
-  {
-    id: 18,
-    name: "Prof.(Dr.) Ramandeep Saini",
-    title: "Director-Principal",
-    imagePath: speakerImages.Ramandeep,
-    designation: "Chandigarh Business School of Administration",
-  },
-  {
-    id: 19,
-    name: "Dr. Honey Sharma",
-    title: "Campus Director",
-    imagePath: speakerImages.Honey,
-    designation: "Gulzar Group Of Institutes",
-  },
-  {
-    id: 20,
-    name: "Prof. Dr. Vijay Kumar Banga",
-    title: "Director",
-    imagePath: speakerImages.Vijay,
-    designation:
-      "Govind Ballabh Pant Institute of Engineering & Technology, Pauri Garhwal, Uttarakhand",
-  },
-  {
-    id: 21,
-    name: "Dr. Harpal Thethi",
-    title:
-      "Professor & Executive Dean - Corporate Relations & Career Planning",
-    imagePath: speakerImages.Harpal,
-    designation: "Lovely Professional University",
-  },
-  {
-    id: 22,
-    name: "Dr. Amit Jain",
-    title: "Director",
-    imagePath: speakerImages.Amit,
-    designation: "Inderprastha Engineering College (IES)",
-  },
-  {
-    id: 23,
-    name: "Subarno Bhattacharyya",
-    title: "Assistant Director",
-    imagePath: speakerImages.SubarnoBhattacharyya,
-    designation:
-      "O.P. Jindal Global (Institution of Eminence) Deemed-to-be-University",
-  },
-  {
-    id: 24,
-    name: "Prof. Shankar Iyer",
-    title: "Head - Centre for Placements and Career Guidance",
-    imagePath: speakerImages.Shankar,
-    designation:
-      "Christ University Pune Lavasa Campus, Maharashtra",
-  },
-  {
-    id: 25,
-    name: "Dr. Anand Kr Shukla",
-    title: "Dean",
-    imagePath: speakerImages.Anand,
-    designation: "Lovely Professional University",
-  },
-  {
-    id: 26,
-    name: "Prof. Rajanikant Verma",
-    title: "Professor",
-    imagePath: speakerImages.Rajanikant,
-    designation: "Zakir Husain Delhi College, University of Delhi",
-  },
-];
+  const visionaries = [
+    {
+      id: 1,
+      name: "Dr. Anshu Kataria",
+      title: "Chairman",
+      imagePath: speakerImages.Anshu,
+      designation: "Aryan Group of Colleges",
+    },
+    {
+      id: 2,
+      name: "Prof.(Dr.) Parvinder Singh",
+      title: "Chairman & Director",
+      imagePath: speakerImages.Parvinder,
+      designation:
+        "Confederation of Indian Private Universities & International Academic Affairs-Chandigarh",
+    },
+    {
+      id: 3,
+      name: "Dr. Picheswar Gadde",
+      title: "Chancellor",
+      imagePath: speakerImages.Picheswar,
+      designation: "Lingaya’s Vidyapeeth, Lingaya's Group, Haryana",
+    },
+    {
+      id: 4,
+      name: "Dr. Manoj Manuja",
+      title: "Vice Chancellor",
+      imagePath: speakerImages.Manoj,
+      designation: "Geeta University",
+    },
+    {
+      id: 5,
+      name: "Prof (Dr.) Manpreet Singh Manna",
+      title: "Vice Chancellor",
+      imagePath: speakerImages.Manpreet,
+      designation: "Chandigarh University",
+    },
+    {
+      id: 6,
+      name: "Dr. Sanjay Bahl",
+      title: "Vice Chancellor",
+      imagePath: speakerImages.Sanjay,
+      designation: "Indus International University",
+    },
+    {
+      id: 7,
+      name: "Prof. (Dr.) Murari Lal Gaur",
+      title: "Chief Advisor",
+      imagePath: speakerImages.Murari,
+      designation:
+        "Rawatpura Sarkar Group of Institutions, MP | Academic Board Member, Banaras Hindu University",
+    },
+    {
+      id: 8,
+      name: "Prof (Dr.) Devendra Sharma",
+      title: "Vice Chancellor",
+      imagePath: speakerImages.Devendra,
+      designation: "HRIT University",
+    },
+    {
+      id: 9,
+      name: "Dr. Akansha Jain",
+      title: "Co-Founder",
+      imagePath: speakerImages.Akansha,
+      designation: "EFOS.in",
+    },
+    {
+      id: 10,
+      name: "Suresh Babu Lakshmanan",
+      title: "Associate Vice President",
+      imagePath: speakerImages.Suresh,
+      designation: "ICT Academy",
+    },
+    {
+      id: 11,
+      name: "Prof. Jayanand",
+      title: "Pro Vice Chancellor",
+      imagePath: speakerImages.Jayanand,
+      designation: "Shobhit Deemed University",
+    },
+    {
+      id: 12,
+      name: "Prof. (Dr.) Pankaj Kumar Mishra",
+      title: "Pro Vice Chancellor",
+      imagePath: speakerImages.PankajKumar,
+      designation: "Future University",
+    },
+    {
+      id: 13,
+      name: "Dr. Jagtar Singh Dhiman",
+      title: "Pro Vice Chancellor",
+      imagePath: speakerImages.Jagtar,
+      designation: "Guru Kashi University, Punjab",
+    },
+    {
+      id: 14,
+      name: "Dr. Raghuveer VR",
+      title: "Pro Vice Chancellor – Academic Affairs",
+      imagePath: speakerImages.Raghuveer,
+      designation: "Chandigarh University",
+    },
+    {
+      id: 15,
+      name: "Prof.(Dr.) Gurpreet Singh",
+      title: "Founder Director",
+      imagePath: speakerImages.Gurpreet,
+      designation: "Chandigarh University Online",
+    },
+    {
+      id: 16,
+      name: "Ankur Gill",
+      title: "Director of Operations",
+      imagePath: speakerImages.Ankur,
+      designation: "Swami Vivekanand Group of Institutes (SVGOI)",
+    },
+    {
+      id: 17,
+      name: "Prof.(Dr.) Pankaj Gupta",
+      title: "Executive Director (CESM)",
+      imagePath: speakerImages.Pankaj,
+      designation: "O. P. Jindal Global University",
+    },
+    {
+      id: 18,
+      name: "Prof.(Dr.) Ramandeep Saini",
+      title: "Director-Principal",
+      imagePath: speakerImages.Ramandeep,
+      designation: "Chandigarh Business School of Administration",
+    },
+    {
+      id: 19,
+      name: "Dr. Honey Sharma",
+      title: "Campus Director",
+      imagePath: speakerImages.Honey,
+      designation: "Gulzar Group Of Institutes",
+    },
+    {
+      id: 20,
+      name: "Prof. Dr. Vijay Kumar Banga",
+      title: "Director",
+      imagePath: speakerImages.Vijay,
+      designation:
+        "Govind Ballabh Pant Institute of Engineering & Technology, Pauri Garhwal, Uttarakhand",
+    },
+    {
+      id: 21,
+      name: "Dr. Harpal Thethi",
+      title:
+        "Professor & Executive Dean - Corporate Relations & Career Planning",
+      imagePath: speakerImages.Harpal,
+      designation: "Lovely Professional University",
+    },
+    {
+      id: 22,
+      name: "Dr. Amit Jain",
+      title: "Director",
+      imagePath: speakerImages.Amit,
+      designation: "Inderprastha Engineering College (IES)",
+    },
+    {
+      id: 23,
+      name: "Subarno Bhattacharyya",
+      title: "Assistant Director",
+      imagePath: speakerImages.SubarnoBhattacharyya,
+      designation:
+        "O.P. Jindal Global (Institution of Eminence) Deemed-to-be-University",
+    },
+    {
+      id: 24,
+      name: "Prof. Shankar Iyer",
+      title: "Head - Centre for Placements and Career Guidance",
+      imagePath: speakerImages.Shankar,
+      designation:
+        "Christ University Pune Lavasa Campus, Maharashtra",
+    },
+    {
+      id: 25,
+      name: "Dr. Anand Kr Shukla",
+      title: "Dean",
+      imagePath: speakerImages.Anand,
+      designation: "Lovely Professional University",
+    },
+    {
+      id: 26,
+      name: "Prof. Rajanikant Verma",
+      title: "Professor",
+      imagePath: speakerImages.Rajanikant,
+      designation: "Zakir Husain Delhi College, University of Delhi",
+    },
+  ];
 
 
   // Duplicate at render-time for smooth seamless loop
@@ -259,10 +259,10 @@ const visionaries = [
       opacity: '0.9',
     },
     headingMain: {
-           fontSize: '50px',
-          fontWeight: '700',
-          color: 'white',
-          marginBottom: '10px'
+      fontSize: '50px',
+      fontWeight: '700',
+      color: 'white',
+      marginBottom: '10px'
     },
     headingLine: {
       content: '""',
@@ -419,11 +419,16 @@ const visionaries = [
                     alt={visionary.name}
                     className="visionary-image"
                     style={styles.image}
+                    loading="lazy"
+                    decoding="async"
+                    width="350"
+                    height="400"
                     onError={() => {
                       console.warn(`Failed to load image for ${visionary.name}`);
                       setFailedImages(prev => ({ ...prev, [index]: true }));
                     }}
                   />
+
                 ) : (
                   <div
                     style={{

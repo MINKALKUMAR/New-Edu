@@ -32,10 +32,10 @@ export default function Partners() {
     },
     title: {
       fontSize: '50px',
-          fontWeight: '700',
-          color: 'white',
-          marginBottom: '10px',
-          textAlign: 'center',
+      fontWeight: '700',
+      color: 'white',
+      marginBottom: '10px',
+      textAlign: 'center',
     },
     slider: {
       display: 'flex',
@@ -80,9 +80,18 @@ export default function Partners() {
         <div style={styles.slider}>
           <div style={styles.track}>
             {[...partners, ...partners].map((partner, index) => (
-              <div key={index}  style={styles.card}>
+              <div key={index} style={styles.card}>
                 <a href={partner.link} target="_blank" rel="noopener noreferrer">
-                  <img src={partner.logo} alt={partner.name} style={styles.image} />
+                  <img
+                    src={partner.logo}
+                    alt={partner.name}
+                    style={styles.image}
+                    loading="lazy"
+                    decoding="async"
+                    width="200"
+                    height="60"
+                  />
+
                 </a>
               </div>
             ))}

@@ -288,20 +288,28 @@ export default function PastGlimpses() {
     },
   };
 
-  const Strip = ({ duration, reverse, offset }) => {
-    const rotated = [...images.slice(offset), ...images.slice(0, offset)];
-    const doubled = [...rotated, ...rotated];
+const Strip = ({ duration, reverse, offset }) => {
+  const rotated = [...images.slice(offset), ...images.slice(0, offset)];
+  const doubled = [...rotated, ...rotated];
 
-    return (
-      <div style={styles.strip(duration, reverse)}>
-        {doubled.map((src, i) => (
-          <div key={i} className="pg-item" style={styles.item}>
-            <img src={src} style={styles.img} alt="" />
-          </div>
-        ))}
-      </div>
-    );
-  };
+  return (
+    <div style={styles.strip(duration, reverse)}>
+      {doubled.map((src, i) => (
+        <div key={i} className="pg-item" style={styles.item}>
+          <img 
+            src={src} 
+            style={styles.img} 
+            alt="" 
+            loading="lazy"
+            decoding="async"
+            width={itemWidth}
+            height={itemHeight}
+          />
+        </div>
+      ))}
+    </div>
+  );
+};
 
   return (
     <section style={styles.section}>
