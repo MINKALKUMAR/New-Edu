@@ -6,6 +6,7 @@ import KHASRAPAT from "../assets/partners/KHASRAPAT.png";
 import ICTAcademy from "../assets/partners/ICTAcademy.png";
 import Education_Future_One from "../assets/partners/Education_Future_One.png";
 import lamrin from "../assets/partners/Lamrin.png";
+import SMT from "../assets/partners/SMT.png";
 
 const OurPartners = () => {
   const styles = `
@@ -135,7 +136,7 @@ const OurPartners = () => {
         { name: "Networking Partner", logo: Education_Future_One, link: "#" },
         { name: "University Partner", logo: LINGAYA, link: "#" },
         { name: "University Partner", logo: lamrin, link: "#" },
-        { name: "Skill Partner", logo: KHASRAPAT, link: "#" },
+        { name: "Institute Partner", logo: SMT, link: "#" },
       ],
     },
   ];
