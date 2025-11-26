@@ -45,10 +45,10 @@ const Awards = () => {
           </div>
           <div style={{ textAlign: "center" }}>
             <div className="award-trophy">
-              <img src={eLogo} style={{marginTop :"-2.5rem"}} height={"100%"} width={"100%"} alt="Award Trophy" />
+              <img src={eLogo} style={{ marginTop: "-2.5rem" }} height={"100%"} width={"100%"} alt="Award Trophy" />
               {/* <p style={{ color: "var(--accent)", fontSize: "1.1rem", fontWeight: 700 }}>Award Trophy</p> */}
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </section>
@@ -181,6 +181,11 @@ const Awards = () => {
           "Most Promising Assessment Solution Provider of the Year 2025",
           "Outstanding Smart Class Solution Provider of the Year 2025",
           "Leading ERP Solution Provider of the Year 2025",
+          "Leading Education Finance Company of the Year 2025",
+          "Outstanding Contribution to Education Financing in India 2025",
+          "Most Trusted Education Loan Provider of the Year 2025",
+          "Most Preferred Financial Partner for Students 2025",
+          "Excellence in Customer - Centric Education Loan Services 2025",
           "Outstanding Digital Education Platform Provider of the Year 2025",
           "Leading School Security Solution Provider of the Year 2025",
           "Most Promising Video Conferencing Solution Provider of the Year 2025",
@@ -481,7 +486,7 @@ SWIFT Code: SBIN0065135`;
               Don't miss this opportunity to get recognized for your contributions to education. Start your nomination
               process today!
             </p>
-             <a className="cta"  href="/Nominate">Begin Nomination</a>
+            <a className="cta" href="/Nominate">Begin Nomination</a>
           </div>
         </div>
       </div>
