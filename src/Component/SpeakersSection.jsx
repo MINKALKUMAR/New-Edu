@@ -30,6 +30,8 @@ import Monieka from '../assets/SpeakersSection/Monieka Khanna.png';
 import Ripudaman from '../assets/SpeakersSection/Dr. Ripudaman Gaur.png';
 import Anil from '../assets/SpeakersSection/Prof Anil Ahlawat.png';
 import Bikash from '../assets/SpeakersSection/Dr. Bikash Sharma.png';
+import Ajay from '../assets/SpeakersSection/Prof. (Dr.) Ajay Kumar.png';
+
 
 
 const SpeakersSection = () => {
@@ -231,6 +233,14 @@ const SpeakersSection = () => {
       designation: "Principal",
       company: "Shirdi Sai Public School",
       image: Sandeep,
+    },
+  
+    {
+      id: 32,
+      name: "Prof. (Dr.) Ajay Kumar",
+      designation: "Professor & Director",
+      company: "I.T.S School of Management, Mohan Nagar, Ghaziabad NCR",
+      image: Ajay,
     },
     {   
       id: 4,
