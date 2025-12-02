@@ -200,7 +200,7 @@ const SpeakersSection = () => {
     },
     {
       id: 32,
-      name: "(Dr.) Ajay Kumar",
+      name: "Dr. Ajay Kumar",
       designation: "Director",
       company: "I.T.S School of Management, Mohan Nagar, Ghaziabad NCR",
       image: Ajay,
