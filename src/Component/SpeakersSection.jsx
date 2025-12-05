@@ -138,6 +138,13 @@ const SpeakersSection = () => {
       company: "IMS Ghaziabad (University Courses Campus)",
       image:Jaskiran,
     },
+     {
+      id: 32,
+      name: "Dr. Ajay Kumar",
+      designation: "Director",
+      company: "I.T.S School of Management, Mohan Nagar, Ghaziabad NCR",
+      image: Ajay,
+    },
     {
       id: 24,
       name: "Prof.(Dr.) Arti Bansal",
@@ -197,13 +204,6 @@ const SpeakersSection = () => {
       designation: "Director",
       company: "Nalla Malla Reddy Foundation School",
       image: Sneha,
-    },
-    {
-      id: 32,
-      name: "Dr. Ajay Kumar",
-      designation: "Director",
-      company: "I.T.S School of Management, Mohan Nagar, Ghaziabad NCR",
-      image: Ajay,
     },
       {
       id: 7,
