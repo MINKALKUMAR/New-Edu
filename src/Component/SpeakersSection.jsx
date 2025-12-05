@@ -31,6 +31,7 @@ import Ripudaman from '../assets/SpeakersSection/Dr. Ripudaman Gaur.png';
 import Anil from '../assets/SpeakersSection/Prof Anil Ahlawat.png';
 import Bikash from '../assets/SpeakersSection/Dr. Bikash Sharma.png';
 import Ajay from '../assets/SpeakersSection/Prof. (Dr.) Ajay Kumar.png';
+import Tanveer from '../assets/SpeakersSection/Dr. Tanveer Naved.png';
 
 
 
@@ -174,6 +175,13 @@ const SpeakersSection = () => {
       designation: "Dean",
       company: "Lloyd Business School",
       image: Ripudaman,
+    },
+     {
+      id: 35,
+      name: "Dr. Tanveer Naved",
+      designation: "Deputy Dean",
+      company: "Faculty of Health and Allied Sciences, Amity University Noida",
+      image: Tanveer,
     },
    
     {
