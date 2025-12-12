@@ -32,6 +32,7 @@ import Anil from '../assets/SpeakersSection/Prof Anil Ahlawat.png';
 import Bikash from '../assets/SpeakersSection/Dr. Bikash Sharma.png';
 import Ajay from '../assets/SpeakersSection/Prof. (Dr.) Ajay Kumar.png';
 import Tanveer from '../assets/SpeakersSection/Dr. Tanveer Naved.png';
+import JayanthiRanjan from '../assets/SpeakersSection/Prof (Dr.) Jayanthi Ranjan.png';
 
 
 
@@ -72,6 +73,13 @@ const SpeakersSection = () => {
       designation: "Vice-Chancellor",
       company: "Geeta University",
       image: ManojManuja,
+    },
+    {
+      id: 55,
+      name: "Prof (Dr.) Jayanthi Ranjan",
+      designation: "Vice-Chancellor",
+      company: "Sharda University, Agra, Uttar Pradesh",
+      image: JayanthiRanjan,
     },
   
     {
