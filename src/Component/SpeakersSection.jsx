@@ -277,7 +277,7 @@ const SpeakersSection = () => {
       id: 25,
       name: "Priya Gambhir",
       designation: "Principal",
-      company: "St. Andrews World School",
+      company: "St. Teresa School Greater Noida",
       image:priya,
     },
     {
