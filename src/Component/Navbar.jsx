@@ -15,7 +15,7 @@ export default function Navbar() {
     { label: "Past Partners", href: "#past-partners" },
     // { label: "Venue", href: "#venue" },
     { label: "Contact", href: "#connect" },
-    { label: "Past Edition", href: "https://previousedition.edutomorrow.in" },
+    { label: "Past Edition", href: "https://first.edutomorrow.in" },
   ];
 
   const handleNavClick = (href) => {
