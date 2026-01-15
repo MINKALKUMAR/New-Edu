@@ -14,7 +14,7 @@ export default function ConnectWithUs() {
     },
     {
       title: 'Speaking & Award Nomination',
-      contact: 'Priyanshi Choudhary',
+      contact: 'Priyanshi Chaudhary',
       email: 'priyanshi@fintrexmedia.com',
       phone: '8755676010',
       icon: (
